@@ -10,6 +10,9 @@ verifying that educator's account. The web app is designed to create a positive 
 # Figma Prototype of Chalk Board
 [Prototype](https://www.figma.com/proto/rkbljo48TZpUF9vnVOl0Nm/Chalk-Board?node-id=313%3A16&viewport=171%2C612%2C0.1564728021621704&scaling=scale-down-width&page-id=0%3A1)
 
+# Heroku Deployment
+[Deployment](https://nht-hoohacks2021.herokuapp.com/)
+
 # Impact of Chalk Board
 Teachers will be able to diversify lesson plans and support one another, especially in the modern prominence of online learning. Another issue we hope for the web app to mend
 is the fact 97% of school teachers spend their own money on school supplies every year. The average teacher spends almost 500 dollars. If teachers are able to create a network 
