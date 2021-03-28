@@ -1,4 +1,95 @@
 {% extends "home/base.html" %}
-{% block content %}
-<p>This is where the real shit happens</p>
-{% endblock %}
+    {% block content %}
+    {% if user.is_authenticated %} 
+    <div class="container">
+        <div class="row">
+            <div>
+                <h2>Jojo Moses</h2>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="
+                    https://cdn.shopify.com/s/files/1/1043/0550/articles/Teacher_Appreciation-11.jpg?v=1532605320" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <p>
+                Made these fabulous pins for my class to come back to after Spring Break! My materials 
+                were only 15$ at Staples, but could probably be found anywhere. <br>
+                1) Print or hand-draw apple stencil from online <br>
+                2) Stack red craft paper <br>
+                <a href="">read more</a>
+            </p>
+        </div>
+        <div class="row">
+                <div>
+                    <h2>Elliot Flag</h2>
+                </div>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://prod-cdn-thekrazycouponlady.imgix.net/wp-content/uploads/2019/08/20180620-store-shots-0051-1565797254.jpg?auto=compress,format&fit=max" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.adweek.com/wp-content/uploads/2020/06/michaels-stock-soar-CONTENT-2020.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.passionforsavings.com/content/uploads/2019/07/Michaels-Teacher-Discount-Feature.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <p>
+                    At Michaels today with my wife, Louisa, shopping for school supplies for the Spring! She’s a teacher
+                    at Washington and Lee. Great sale at the Michaels in Seven Corners, 10 for 8$ notebooks and lots of pen 
+                    packs on sale!
+                </p>
+        </div>
+        <div class="row">
+                    <div>
+                        <h2>John Wallace</h2>
+                    </div>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src= "https://www.acsebooks.com/database/images/how-children-think-ebook-main-6050-6050.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <p>
+                        Got recommended this book from an old friend of mine (love you @maddiemccollum22) 
+                        and while I haven’t been able to apply it to my college kids, I would’ve loved it 
+                        back when I was working with the younger kiddos in Missouri! It’s by ACS Distance 
+                        Education and has such a fresh description into the minds of those we all love most- the kids! 
+                        Hope a few of you guys will consider giving it a read, it will not disappoint.
+                    </p>
+            </div>
+    </div>
+    {% else %}
+        <a href="/login">Login Here</a>
+    {% endif %}
+    {% endblock %}
